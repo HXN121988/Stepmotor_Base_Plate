@@ -142,9 +142,3 @@ MIT License
 
 ## 🤝 贡献
 欢迎Issue反馈硬件bug、代码bug，也欢迎提交PR优化代码。
-
----
-
-### 复制提示
-直接全选复制上面全部文本，粘贴到Github仓库的`README.md`即可，图片链接你后续可以自行补充。
-如果你需要，我还可以帮你生成github仓库的`.gitignore`（Keil工程专用）。
