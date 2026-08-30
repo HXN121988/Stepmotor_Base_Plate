@@ -1,9 +1,47 @@
-<div align="center">
-# 🦾 STM32-TMC2209 步进电机驱动板
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Platform: STM32F103](https://img.shields.io/badge/Platform-STM32F103-blue)](https://www.st.com/en/microcontrollers-microprocessors/stm32f103-series.html)
-[![IDE: Keil MDK](https://img.shields.io/badge/IDE-Keil%20MDK-green)](https://www.keil.com/)
-[![Framework: StdPeriph](https://img.shields.io/badge/Framework-STM32_StdPeriph-orange)](https://www.st.com/en/development-tools/stm32-standard-peripheral-software.html)
-**基于 STM32F103C8T6 主控 + TMC2209 静音驱动的步进电机控制底板，支持恒速运行、梯形加减速，适用于自动化设备、3D 打印、写字机等场景。**
-[快速开始](#-快速开始) · [API 说明](#-api说明) · [硬件连接](#-硬件连接) · [参数配置](#-参数配置) · [常见问题](#-常见问题-faq)
-</div>
+# STM32F103 + TMC2209 步进电机运动控制库
+
+基于 **STM32F103C8T6** 微控制器与 **TMC2209** 静音驱动器的步进电机控制方案。本仓库提供了一套轻量级、易移植的嵌入式 C 语言驱动库，支持恒速运行、定转速运行以及带梯形加减速的长距离运动，有效防止高速丢步。
+
+---
+
+## 📋 目录
+
+- [主要特性](#-主要特性)
+- [硬件连接](#-硬件连接)
+- [软件架构](#-软件架构)
+- [关键参数配置](#-关键参数配置)
+- [API 函数说明](#-api-函数说明)
+- [快速上手](#-快速上手)
+- [注意事项](#-注意事项)
+- [许可证与贡献](#-许可证与贡献)
+
+---
+
+## 🚀 主要特性
+
+- **三种控制模式**：提供定步数恒速、按指定转速（RPM）运行、线性梯形加减速三种接口。
+- **高精度脉冲控制**：基于 SysTick 的阻塞式微秒延时，脉冲宽度精确可调。
+- **硬件解耦设计**：STEP、DIR、EN 引脚通过宏定义配置，可快速适配不同 PCB。
+- **加减速防丢步**：内置线性加速→匀速→减速算法，特别适合大惯量负载启动。
+- **极简 API**：仅需 5 个核心函数即可完成复杂运动控制。
+
+---
+
+## 🔌 硬件连接
+
+本库默认引脚映射如下（可在 `step_motor.h` 中修改）：
+
+| 功能 | STM32F103 引脚 | 说明 |
+| :--- | :--- | :--- |
+| **STEP** | PA0 | 脉冲输入（上升沿有效） |
+| **DIR** | PA1 | 方向控制（高/低电平） |
+| **EN** | PA2 | 使能控制（低电平使能） |
+| VCC | 3.3V / 5V | 驱动器逻辑供电（视模块而定） |
+| GND | GND | 共地连接 |
+
+> ⚠️ 注意：`EN` 引脚默认上电为高电平（驱动器失能），需调用 `StepMotor_Enable()` 后电机才能锁定。
+
+---
+
+## 🗂️ 软件架构
+
