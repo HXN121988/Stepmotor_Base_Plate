@@ -14,6 +14,7 @@
 > 适合滑台、小型自动化、DIY机器人项目
 
 <img width="271" height="255" alt="3b2aa095d324a76abdaf97269c4c3b0b" src="https://github.com/user-attachments/assets/2993ba32-4267-459b-90da-d75f3be12662" />
+<img width="341" height="255" alt="081a6ea43e767bdfbe1444de5c118dca" src="https://github.com/user-attachments/assets/55175d08-c06e-4f23-8faa-a693f7f2fa6d" />
 
 </div>
 
