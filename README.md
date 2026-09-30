@@ -13,8 +13,7 @@
 > 一体化步进电机运动控制器｜硬件+固件完整开源
 > 适合滑台、小型自动化、DIY机器人项目
 
-<!-- 替换为你的实物/原理图截图链接 -->
-<!-- <img width="700" src="./Doc/pcb_render.png"> -->
+<img width="271" height="255" alt="3b2aa095d324a76abdaf97269c4c3b0b" src="https://github.com/user-attachments/assets/2993ba32-4267-459b-90da-d75f3be12662" />
 
 </div>
 
