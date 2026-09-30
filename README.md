@@ -211,7 +211,9 @@ STM32‑TMC2209‑Stepper‑Driver
 
 ## 📄开源协议
 
-[![MIT](%5Bhttps://img.shields.io/badge/license%5D(https://img.shields.io/badge/license)%E2%80%91MIT%E2%80%91blue.svg)](./LICENSE)
+## 📄开源协议
+
+**📜 MIT License**
 
 > 
 > MIT License
