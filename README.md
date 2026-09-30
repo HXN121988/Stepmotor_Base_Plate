@@ -1,6 +1,6 @@
 # STM32 + TMC2209 步进电机驱动开发板
 > 一款集成完整电源保护、静音驱动、按键交互与显示扩展的开源步进电机控制方案
-<img width="1358" height="1279" alt="56f773f0e2a5f16b6049055f5e779f46" src="https://github.com/user-attachments/assets/205adf80-e39c-4c01-b7a9-dee087c2406d" />
+<img width="271" height="255" alt="56f773f0e2a5f16b6049055f5e779f46" src="https://github.com/user-attachments/assets/205adf80-e39c-4c01-b7a9-dee087c2406d" />
 
 ---
 
