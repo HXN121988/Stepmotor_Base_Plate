@@ -3,11 +3,11 @@
 # 🛠️ STM32‑TMC2209 步进电机驱动控制板
 
 <p>
-<img src="[https://img.shields.io/badge/Hardware-STM32F103C8T6-blue](https://img.shields.io/badge/Hardware-STM32F103C8T6-blue)" />
-<img src="[https://img.shields.io/badge/Driver-TMC2209](https://img.shields.io/badge/Driver-TMC2209)‑Silent‑green" />
-<img src="[https://img.shields.io/badge/License-MIT-yellow.svg](https://img.shields.io/badge/License-MIT-yellow.svg)" />
-<img src="[https://img.shields.io/badge/Maintain-Active](https://img.shields.io/badge/Maintain-Active)‑success" />
-<img src="[https://img.shields.io/badge/Input](https://img.shields.io/badge/Input)‑28V‑orange" />
+<img src="https://img.shields.io/badge/Hardware-STM32F103C8T6-blue" />
+<img src="https://img.shields.io/badge/Driver-TMC2209-Silent-green" />
+<img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+<img src="https://img.shields.io/badge/Maintain-Active-success" />
+<img src="https://img.shields.io/badge/Input-28V-orange" />
 </p>
 
 > 一体化步进电机运动控制器｜硬件+固件完整开源
