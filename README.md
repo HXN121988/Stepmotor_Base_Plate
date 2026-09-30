@@ -4,7 +4,7 @@
 
 <p>
 <img src="https://img.shields.io/badge/Hardware-STM32F103C8T6-blue" />
-<img src="https://img.shields.io/badge/Driver-TMC2209-Silent-green" />
+<img src="https://img.shields.io/badge/Driver-TMC2209%20Silent-green" />
 <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
 <img src="https://img.shields.io/badge/Maintain-Active-success" />
 <img src="https://img.shields.io/badge/Input-28V-orange" />
